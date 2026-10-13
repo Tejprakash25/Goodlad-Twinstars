@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Update the sitemap URL to your final production domain once deployed.
+Sitemap: /sitemap.xml

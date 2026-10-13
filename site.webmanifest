@@ -1,0 +1,16 @@
+{
+  "name": "Goodlad Twinstars",
+  "short_name": "Goodlad Twinstars",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f7fb",
+  "theme_color": "#f4f7fb",
+  "icons": [
+    {
+      "src": "BrandAssets/GOODLAD_TWINSTARS_logo_white_bg.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
