@@ -7,9 +7,9 @@
   "theme_color": "#f4f7fb",
   "icons": [
     {
-      "src": "BrandAssets/GOODLAD_TWINSTARS_logo_white_bg.svg",
+      "src": "BrandAssets/GOODLAD_TWINSTARS_logo_white_bg.png",
       "sizes": "any",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ]

@@ -108,16 +108,17 @@
         .logo-link {
           display: flex;
           align-items: center;
-          flex: 0 1 300px;
+          flex: 0 1 240px;
           min-width: 0;
         }
 
         .logo {
           display: block;
           width: 100%;
-          max-width: 300px;
+          max-width: 240px;
           height: auto;
           object-fit: contain;
+          mix-blend-mode: multiply;
         }
 
         nav {
@@ -559,7 +560,7 @@
           }
 
           .logo-link {
-            flex-basis: 245px;
+            flex-basis: 220px;
           }
 
           nav {
@@ -588,8 +589,18 @@
           }
 
           .logo-link {
-            flex-basis: 220px;
-          }
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  min-width: 0;
+}
+
+.logo {
+  display: block;
+  width: clamp(180px, 42vw, 220px);
+  height: auto;
+  object-fit: contain;
+}
 
           .contact {
             margin-left: auto;
@@ -647,10 +658,10 @@
         <a class="logo-link" href="#top" aria-label="Goodlad Twinstars home">
             <img
                     class="logo"
-                    src="./BrandAssets/GOODLAD_TWINSTARS_logo_white_bg.png"
+                    src="./BrandAssets/GOODLAD_TWINSTARS_logo_white_bg.svg"
                     alt="Goodlad Twinstars"
-                    width="300"
-                    height="103"
+                    width="965"
+                    height="330"
             >
         </a>
         <nav aria-label="Main navigation">
