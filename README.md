@@ -54,14 +54,14 @@ This project is a static website and should not contain:
 Verified practice in this patch:
 - No private credentials or IDs are added
 - No production domain URL is invented
-- No backend capability is claimed
-- All integrations are configured via runtime values only, and are clearly marked as setup-dependent
+- The contact form uses a public Formspark submission endpoint; it contains no secret credential
+- Analytics remains disabled until it is explicitly configured and consent-gated
 
 Configuration-dependent items
 These values must be set before launch:
 - canonical URL in index.html
 - final production domain in deployment platform
-- form submission endpoint in script.js via GOODLAD_CONFIG.formEndpoint
+- Formspark notification, spam-protection, and allowed-domain settings
 - analytics provider and ID in script.js via GOODLAD_CONFIG.analyticsId if you enable analytics
 - any consent, CRM, or form service credentials outside this repo
 
@@ -77,14 +77,9 @@ Exact setup instructions
     - Update the canonical URL in index.html once the live domain is known.
 
 3. Configure the contact form
-    - In script.js, set:
-      window.GOODLAD_CONFIG = {
-      formEndpoint: "https://your-form-endpoint.example/api/contact",
-      analyticsEnabled: false,
-      analyticsId: "",
-      cookieConsentKey: "goodlad-cookie-consent"
-      };
-    - If you do not have a backend endpoint yet, leave formEndpoint empty and keep the form in validation mode only.
+    - The Formspark endpoint is configured in script.js.
+    - Set the Formspark notification recipient to goodladtwinstars@gmail.com.
+    - Enable spam protection and add the final production domain to Formspark's allowed domains after deployment.
 
 4. Configure analytics
     - Only enable analytics after your consent policy is finalized.
@@ -130,6 +125,7 @@ Performance notes
 - No large extra images are introduced beyond existing brand assets
 
 Files delivered
+- LAUNCH_CHECKLIST.md
 - index.html
 - script.js
 - README.md

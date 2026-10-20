@@ -7,7 +7,7 @@
 */
 
 const siteConfig = Object.assign({
-  formEndpoint: "",
+  formEndpoint: "https://submit-form.com/np4OejJnM",
   analyticsEnabled: false,
   analyticsId: "",
   cookieConsentKey: "goodlad-cookie-consent"
@@ -314,7 +314,10 @@ document.addEventListener("DOMContentLoaded", () => {
       try {
         const response = await fetch(siteConfig.formEndpoint, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+          },
           mode: "cors",
           cache: "no-store",
           body: JSON.stringify(payload)
