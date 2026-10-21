@@ -10,7 +10,7 @@ This checklist is the persistent record of remaining work for the first public c
 
 ## Before deployment
 
-- [ ] Add the supplied phone, email, and LinkedIn details to the contact section and footer.
+- [x] Add the supplied phone, email, and LinkedIn details to the contact section and footer.
 - [ ] Confirm Formspark notification emails are sent to `goodladtwinstars@gmail.com`.
 - [ ] Configure Formspark spam protection and review the existing honeypot.
 - [ ] Update the privacy policy to name Formspark as a form-processing provider and document the relevant data handling.

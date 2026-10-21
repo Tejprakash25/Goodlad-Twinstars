@@ -386,6 +386,26 @@
           margin: 0;
         }
 
+        .contact-details {
+          display: grid;
+          gap: 8px;
+          margin-top: 24px;
+          font-size: 14px;
+        }
+
+        .contact-details a {
+          color: var(--ink);
+          font-weight: 650;
+          text-decoration: underline;
+          text-decoration-color: rgba(89, 65, 135, 0.35);
+          text-underline-offset: 3px;
+        }
+
+        .contact-details a:hover {
+          color: var(--violet);
+          text-decoration-color: currentColor;
+        }
+
         .contact-form {
           display: grid;
           gap: 14px;
@@ -499,6 +519,21 @@
           display: flex;
           gap: 14px;
           flex-wrap: wrap;
+        }
+
+        .footer-contact {
+          display: flex;
+          gap: 14px;
+          flex-wrap: wrap;
+        }
+
+        .footer-contact a {
+          color: var(--ink);
+          font-weight: 650;
+        }
+
+        .footer-contact a:hover {
+          color: var(--violet);
         }
 
         .cookie-banner {
@@ -759,8 +794,13 @@
                     <h2>Request an AI document intelligence consultation.</h2>
                     <p>
                         Tell us about your document workflows, compliance needs and the knowledge challenges you want to solve.
-                        This form validates client-side input and is ready for a configured form endpoint or email workflow.
+                        We will get back to you through the contact details you provide.
                     </p>
+                    <div class="contact-details" aria-label="Goodlad Twinstars contact details">
+                        <a href="tel:+917378965050">+91 73789 65050</a>
+                        <a href="mailto:goodladtwinstars@gmail.com">goodladtwinstars@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/tejprakash-mirashi-06781a2a" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                    </div>
                 </div>
 
                 <form id="contact-form" class="contact-form" novalidate aria-live="polite">
@@ -808,6 +848,11 @@
 
     <footer>
         <span>© <span data-current-year></span> Goodlad Twinstars</span>
+        <div class="footer-contact" aria-label="Goodlad Twinstars contact links">
+            <a href="tel:+917378965050">+91 73789 65050</a>
+            <a href="mailto:goodladtwinstars@gmail.com">goodladtwinstars@gmail.com</a>
+            <a href="https://www.linkedin.com/in/tejprakash-mirashi-06781a2a" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
         <div class="footer-links">
             <a href="privacy.html">Privacy</a>
             <a href="terms.html">Terms</a>
